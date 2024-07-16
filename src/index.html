@@ -7,47 +7,78 @@
   <title>Tailwind CSS Cheat Sheet</title>
   <style>
     body { font-family: Arial, sans-serif; }
+    .example-box { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    .code { background: #f9f9f9; border: 1px solid #ddd; padding: 10px; }
   </style>
 </head>
 <body class="bg-gray-100 p-10">
   <div class="container mx-auto">
     <h1 class="text-4xl font-bold mb-8">Tailwind CSS Cheat Sheet</h1>
-    
+
     <!-- Typography -->
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Typography</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Text Size</h3>
-          <p class="text-xs">text-xs</p>
-          <p class="text-sm">text-sm</p>
-          <p class="text-base">text-base</p>
-          <p class="text-lg">text-lg</p>
-          <p class="text-xl">text-xl</p>
-          <p class="text-2xl">text-2xl</p>
-          <p class="text-3xl">text-3xl</p>
-          <p class="text-4xl">text-4xl</p>
-          <p class="text-5xl">text-5xl</p>
-          <p class="text-6xl">text-6xl</p>
+          <p class="text-xs">text-xs (extra small text)</p>
+          <p class="text-sm">text-sm (small text)</p>
+          <p class="text-base">text-base (base size text)</p>
+          <p class="text-lg">text-lg (large text)</p>
+          <p class="text-xl">text-xl (extra large text)</p>
+          <p class="text-2xl">text-2xl (2 times large text)</p>
+          <p class="text-3xl">text-3xl (3 times large text)</p>
+          <p class="text-4xl">text-4xl (4 times large text)</p>
+          <p class="text-5xl">text-5xl (5 times large text)</p>
+          <p class="text-6xl">text-6xl (6 times large text)</p>
+          <pre class="code">
+&lt;p class="text-xs"&gt;text-xs&lt;/p&gt;
+&lt;p class="text-sm"&gt;text-sm&lt;/p&gt;
+&lt;p class="text-base"&gt;text-base&lt;/p&gt;
+&lt;p class="text-lg"&gt;text-lg&lt;/p&gt;
+&lt;p class="text-xl"&gt;text-xl&lt;/p&gt;
+&lt;p class="text-2xl"&gt;text-2xl&lt;/p&gt;
+&lt;p class="text-3xl"&gt;text-3xl&lt;/p&gt;
+&lt;p class="text-4xl"&gt;text-4xl&lt;/p&gt;
+&lt;p class="text-5xl"&gt;text-5xl&lt;/p&gt;
+&lt;p class="text-6xl"&gt;text-6xl&lt;/p&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Text Color</h3>
-          <p class="text-white bg-black p-2">text-white</p>
-          <p class="text-black">text-black</p>
-          <p class="text-gray-500">text-gray-500</p>
-          <p class="text-red-500">text-red-500</p>
-          <p class="text-green-500">text-green-500</p>
-          <p class="text-blue-500">text-blue-500</p>
+          <p class="text-white bg-black p-2">text-white (white text)</p>
+          <p class="text-black">text-black (black text)</p>
+          <p class="text-gray-500">text-gray-500 (gray text)</p>
+          <p class="text-red-500">text-red-500 (red text)</p>
+          <p class="text-green-500">text-green-500 (green text)</p>
+          <p class="text-blue-500">text-blue-500 (blue text)</p>
+          <pre class="code">
+&lt;p class="text-white bg-black p-2"&gt;text-white&lt;/p&gt;
+&lt;p class="text-black"&gt;text-black&lt;/p&gt;
+&lt;p class="text-gray-500"&gt;text-gray-500&lt;/p&gt;
+&lt;p class="text-red-500"&gt;text-red-500&lt;/p&gt;
+&lt;p class="text-green-500"&gt;text-green-500&lt;/p&gt;
+&lt;p class="text-blue-500"&gt;text-blue-500&lt;/p&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Font Weight</h3>
-          <p class="font-thin">font-thin</p>
-          <p class="font-light">font-light</p>
-          <p class="font-normal">font-normal</p>
-          <p class="font-medium">font-medium</p>
-          <p class="font-semibold">font-semibold</p>
-          <p class="font-bold">font-bold</p>
-          <p class="font-extrabold">font-extrabold</p>
+          <p class="font-thin">font-thin (very thin text)</p>
+          <p class="font-light">font-light (light text)</p>
+          <p class="font-normal">font-normal (normal text)</p>
+          <p class="font-medium">font-medium (medium weight text)</p>
+          <p class="font-semibold">font-semibold (semi-bold text)</p>
+          <p class="font-bold">font-bold (bold text)</p>
+          <p class="font-extrabold">font-extrabold (extra-bold text)</p>
+          <pre class="code">
+&lt;p class="font-thin"&gt;font-thin&lt;/p&gt;
+&lt;p class="font-light"&gt;font-light&lt;/p&gt;
+&lt;p class="font-normal"&gt;font-normal&lt;/p&gt;
+&lt;p class="font-medium"&gt;font-medium&lt;/p&gt;
+&lt;p class="font-semibold"&gt;font-semibold&lt;/p&gt;
+&lt;p class="font-bold"&gt;font-bold&lt;/p&gt;
+&lt;p class="font-extrabold"&gt;font-extrabold&lt;/p&gt;
+          </pre>
         </div>
       </div>
     </section>
@@ -56,19 +87,31 @@
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Spacing</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Margin</h3>
-          <div class="m-1 bg-blue-100 p-2">m-1</div>
-          <div class="m-2 bg-blue-200 p-2">m-2</div>
-          <div class="m-4 bg-blue-300 p-2">m-4</div>
-          <div class="m-8 bg-blue-400 p-2">m-8</div>
+          <div class="m-1 bg-blue-100 p-2">m-1 (margin: 0.25rem)</div>
+          <div class="m-2 bg-blue-200 p-2">m-2 (margin: 0.5rem)</div>
+          <div class="m-4 bg-blue-300 p-2">m-4 (margin: 1rem)</div>
+          <div class="m-8 bg-blue-400 p-2">m-8 (margin: 2rem)</div>
+          <pre class="code">
+&lt;div class="m-1 bg-blue-100 p-2"&gt;m-1&lt;/div&gt;
+&lt;div class="m-2 bg-blue-200 p-2"&gt;m-2&lt;/div&gt;
+&lt;div class="m-4 bg-blue-300 p-2"&gt;m-4&lt;/div&gt;
+&lt;div class="m-8 bg-blue-400 p-2"&gt;m-8&lt;/div&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Padding</h3>
-          <div class="p-1 bg-green-100">p-1</div>
-          <div class="p-2 bg-green-200">p-2</div>
-          <div class="p-4 bg-green-300">p-4</div>
-          <div class="p-8 bg-green-400">p-8</div>
+          <div class="p-1 bg-green-100">p-1 (padding: 0.25rem)</div>
+          <div class="p-2 bg-green-200">p-2 (padding: 0.5rem)</div>
+          <div class="p-4 bg-green-300">p-4 (padding: 1rem)</div>
+          <div class="p-8 bg-green-400">p-8 (padding: 2rem)</div>
+          <pre class="code">
+&lt;div class="p-1 bg-green-100"&gt;p-1&lt;/div&gt;
+&lt;div class="p-2 bg-green-200"&gt;p-2&lt;/div&gt;
+&lt;div class="p-4 bg-green-300"&gt;p-4&lt;/div&gt;
+&lt;div class="p-8 bg-green-400"&gt;p-8&lt;/div&gt;
+          </pre>
         </div>
       </div>
     </section>
@@ -77,25 +120,42 @@
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Layout</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Width</h3>
-          <div class="w-1/2 bg-yellow-100 p-2">w-1/2</div>
-          <div class="w-full bg-yellow-200 p-2">w-full</div>
-          <div class="w-screen bg-yellow-300 p-2">w-screen</div>
+          <div class="w-1/2 bg-yellow-100 p-2">w-1/2 (width: 50%)</div>
+          <div class="w-full bg-yellow-200 p-2">w-full (width: 100%)</div>
+          <div class="w-screen bg-yellow-300 p-2">w-screen (width: 100vw)</div>
+          <pre class="code">
+&lt;div class="w-1/2 bg-yellow-100 p-2"&gt;w-1/2&lt;/div&gt;
+&lt;div class="w-full bg-yellow-200 p-2"&gt;w-full&lt;/div&gt;
+&lt;div class="w-screen bg-yellow-300 p-2"&gt;w-screen&lt;/div&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Height</h3>
-          <div class="h-32 bg-red-100 p-2">h-32</div>
-          <div class="h-full bg-red-200 p-2">h-full</div>
-          <div class="h-screen bg-red-300 p-2">h-screen</div>
+          <div class="h-32 bg-red-100 p-2">h-32 (height: 8rem)</div>
+          <div class="h-full bg-red-200 p-2">h-full (height: 100%)</div>
+          <div class="h-screen bg-red-300 p-2">h-screen (height: 100vh)</div>
+          <pre class="code">
+&lt;div class="h-32 bg-red-100 p-2"&gt;h-32&lt;/div&gt;
+&lt;div class="h-full bg-red-200 p-2"&gt;h-full&lt;/div&gt;
+&lt;div class="h-screen bg-red-300 p-2"&gt;h-screen&lt;/div&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Display</h3>
-          <div class="block bg-purple-100 p-2">block: Takes the full width available</div>
-          <div class="inline-block bg-purple-200 p-2">inline-block: Takes only the width it needs</div>
-          <div class="flex bg-purple-300 p-2">flex: Arranges its children in a row or column</div>
-          <div class="inline-flex bg-purple-400 p-2">inline-flex: Like flex but doesn't start on a new line</div>
-          <div class="grid bg-purple-500 p-2">grid: Arranges its children in a grid</div>
+          <div class="block bg-purple-100 p-2">block (takes the full width available)</div>
+          <div class="inline-block bg-purple-200 p-2">inline-block (takes only the width it needs)</div>
+          <div class="flex bg-purple-300 p-2">flex (arranges its children in a row or column)</div>
+          <div class="inline-flex bg-purple-400 p-2">inline-flex (like flex but doesn't start on a new line)</div>
+          <div class="grid bg-purple-500 p-2">grid (arranges its children in a grid)</div>
+          <pre class="code">
+&lt;div class="block bg-purple-100 p-2"&gt;block&lt;/div&gt;
+&lt;div class="inline-block bg-purple-200 p-2"&gt;inline-block&lt;/div&gt;
+&lt;div class="flex bg-purple-300 p-2"&gt;flex&lt;/div&gt;
+&lt;div class="inline-flex bg-purple-400 p-2"&gt;inline-flex&lt;/div&gt;
+&lt;div class="grid bg-purple-500 p-2"&gt;grid&lt;/div&gt;
+          </pre>
         </div>
       </div>
     </section>
@@ -104,35 +164,85 @@
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Flexbox and Grid</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Flexbox</h3>
           <div class="flex bg-gray-100 p-2">
-            <div class="flex-1 bg-blue-200 p-2">flex-1: Each item takes equal space</div>
-            <div class="flex-1 bg-blue-300 p-2">flex-1: Each item takes equal space</div>
+            <div class="flex-1 bg-blue-200 p-2">flex-1 (each item takes equal space)</div>
+            <div class="flex-1 bg-blue-300 p-2">flex-1 (each item takes equal space)</div>
           </div>
           <div class="flex flex-row bg-gray-200 p-2">
-            <div class="flex-1 bg-green-200 p-2">flex-row: Items are arranged in a row</div>
-            <div class="flex-1 bg-green-300 p-2">flex-row: Items are arranged in a row</div>
+            <div class="flex-1 bg-green-200 p-2">flex-row (items are arranged in a row)</div>
+            <div class="flex-1 bg-green-300 p-2">flex-row (items are arranged in a row)</div>
           </div>
           <div class="flex flex-col bg-gray-300 p-2">
-            <div class="flex-1 bg-red-200 p-2">flex-col: Items are arranged in a column</div>
-            <div class="flex-1 bg-red-300 p-2">flex-col: Items are arranged in a column</div>
+            <div class="flex-1 bg-red-200 p-2">flex-col (items are arranged in a column)</div>
+            <div class="flex-1 bg-red-300 p-2">flex-col (items are arranged in a column)</div>
           </div>
+          <div class="flex items-center bg-gray-400 p-2">
+            <div class="bg-purple-200 p-2">items-center (aligns items in the center vertically)</div>
+          </div>
+          <div class="flex justify-center bg-gray-500 p-2">
+            <div class="bg-purple-300 p-2">justify-center (aligns items in the center horizontally)</div>
+          </div>
+          <pre class="code">
+&lt;div class="flex bg-gray-100 p-2"&gt;
+  &lt;div class="flex-1 bg-blue-200 p-2"&gt;flex-1&lt;/div&gt;
+  &lt;div class="flex-1 bg-blue-300 p-2"&gt;flex-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="flex flex-row bg-gray-200 p-2"&gt;
+  &lt;div class="flex-1 bg-green-200 p-2"&gt;flex-row&lt;/div&gt;
+  &lt;div class="flex-1 bg-green-300 p-2"&gt;flex-row&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="flex flex-col bg-gray-300 p-2"&gt;
+  &lt;div class="flex-1 bg-red-200 p-2"&gt;flex-col&lt;/div&gt;
+  &lt;div class="flex-1 bg-red-300 p-2"&gt;flex-col&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="flex items-center bg-gray-400 p-2"&gt;
+  &lt;div class="bg-purple-200 p-2"&gt;items-center&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="flex justify-center bg-gray-500 p-2"&gt;
+  &lt;div class="bg-purple-300 p-2"&gt;justify-center&lt;/div&gt;
+&lt;/div&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Grid</h3>
           <div class="grid grid-cols-1 bg-gray-100 p-2">
-            <div class="bg-blue-200 p-2">grid-cols-1: One column</div>
+            <div class="bg-blue-200 p-2">grid-cols-1 (one column)</div>
           </div>
           <div class="grid grid-cols-2 bg-gray-200 p-2">
-            <div class="bg-green-200 p-2">grid-cols-2: Two columns</div>
-            <div class="bg-green-300 p-2">grid-cols-2: Two columns</div>
+            <div class="bg-green-200 p-2">grid-cols-2 (two columns)</div>
+            <div class="bg-green-300 p-2">grid-cols-2 (two columns)</div>
           </div>
           <div class="grid grid-cols-3 bg-gray-300 p-2">
-            <div class="bg-red-200 p-2">grid-cols-3: Three columns</div>
-            <div class="bg-red-300 p-2">grid-cols-3: Three columns</div>
-            <div class="bg-red-400 p-2">grid-cols-3: Three columns</div>
+            <div class="bg-red-200 p-2">grid-cols-3 (three columns)</div>
+            <div class="bg-red-300 p-2">grid-cols-3 (three columns)</div>
+            <div class="bg-red-400 p-2">grid-cols-3 (three columns)</div>
           </div>
+          <div class="grid gap-4 grid-cols-3 bg-gray-400 p-2">
+            <div class="bg-yellow-200 p-2">gap-4 (adds spacing between items)</div>
+            <div class="bg-yellow-300 p-2">gap-4 (adds spacing between items)</div>
+            <div class="bg-yellow-400 p-2">gap-4 (adds spacing between items)</div>
+          </div>
+          <pre class="code">
+&lt;div class="grid grid-cols-1 bg-gray-100 p-2"&gt;
+  &lt;div class="bg-blue-200 p-2"&gt;grid-cols-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid grid-cols-2 bg-gray-200 p-2"&gt;
+  &lt;div class="bg-green-200 p-2"&gt;grid-cols-2&lt;/div&gt;
+  &lt;div class="bg-green-300 p-2"&gt;grid-cols-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid grid-cols-3 bg-gray-300 p-2"&gt;
+  &lt;div class="bg-red-200 p-2"&gt;grid-cols-3&lt;/div&gt;
+  &lt;div class="bg-red-300 p-2"&gt;grid-cols-3&lt;/div&gt;
+  &lt;div class="bg-red-400 p-2"&gt;grid-cols-3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid gap-4 grid-cols-3 bg-gray-400 p-2"&gt;
+  &lt;div class="bg-yellow-200 p-2"&gt;gap-4&lt;/div&gt;
+  &lt;div class="bg-yellow-300 p-2"&gt;gap-4&lt;/div&gt;
+  &lt;div class="bg-yellow-400 p-2"&gt;gap-4&lt;/div&gt;
+&lt;/div&gt;
+          </pre>
         </div>
       </div>
     </section>
@@ -141,14 +251,22 @@
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Background</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Background Color</h3>
-          <div class="bg-white p-2">bg-white</div>
-          <div class="bg-black text-white p-2">bg-black</div>
-          <div class="bg-gray-500 text-white p-2">bg-gray-500</div>
-          <div class="bg-red-500 text-white p-2">bg-red-500</div>
-          <div class="bg-green-500 text-white p-2">bg-green-500</div>
-          <div class="bg-blue-500 text-white p-2">bg-blue-500</div>
+          <div class="bg-white p-2">bg-white (white background)</div>
+          <div class="bg-black text-white p-2">bg-black (black background)</div>
+          <div class="bg-gray-500 text-white p-2">bg-gray-500 (gray background)</div>
+          <div class="bg-red-500 text-white p-2">bg-red-500 (red background)</div>
+          <div class="bg-green-500 text-white p-2">bg-green-500 (green background)</div>
+          <div class="bg-blue-500 text-white p-2">bg-blue-500 (blue background)</div>
+          <pre class="code">
+&lt;div class="bg-white p-2"&gt;bg-white&lt;/div&gt;
+&lt;div class="bg-black text-white p-2"&gt;bg-black&lt;/div&gt;
+&lt;div class="bg-gray-500 text-white p-2"&gt;bg-gray-500&lt;/div&gt;
+&lt;div class="bg-red-500 text-white p-2"&gt;bg-red-500&lt;/div&gt;
+&lt;div class="bg-green-500 text-white p-2"&gt;bg-green-500&lt;/div&gt;
+&lt;div class="bg-blue-500 text-white p-2"&gt;bg-blue-500&lt;/div&gt;
+          </pre>
         </div>
       </div>
     </section>
@@ -157,17 +275,27 @@
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Borders</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Border Radius</h3>
-          <div class="rounded bg-gray-200 p-2">rounded</div>
-          <div class="rounded-lg bg-gray-300 p-2">rounded-lg</div>
-          <div class="rounded-full bg-gray-400 p-2">rounded-full</div>
+          <div class="rounded bg-gray-200 p-2">rounded (small border radius)</div>
+          <div class="rounded-lg bg-gray-300 p-2">rounded-lg (large border radius)</div>
+          <div class="rounded-full bg-gray-400 p-2">rounded-full (full border radius)</div>
+          <pre class="code">
+&lt;div class="rounded bg-gray-200 p-2"&gt;rounded&lt;/div&gt;
+&lt;div class="rounded-lg bg-gray-300 p-2"&gt;rounded-lg&lt;/div&gt;
+&lt;div class="rounded-full bg-gray-400 p-2"&gt;rounded-full&lt;/div&gt;
+          </pre>
         </div>
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Border Width</h3>
-          <div class="border-2 border-gray-500 p-2">border-2</div>
-          <div class="border-4 border-gray-500 p-2">border-4</div>
-          <div class="border-8 border-gray-500 p-2">border-8</div>
+          <div class="border-2 border-gray-500 p-2">border-2 (border width: 2px)</div>
+          <div class="border-4 border-gray-500 p-2">border-4 (border width: 4px)</div>
+          <div class="border-8 border-gray-500 p-2">border-8 (border width: 8px)</div>
+          <pre class="code">
+&lt;div class="border-2 border-gray-500 p-2"&gt;border-2&lt;/div&gt;
+&lt;div class="border-4 border-gray-500 p-2"&gt;border-4&lt;/div&gt;
+&lt;div class="border-8 border-gray-500 p-2"&gt;border-8&lt;/div&gt;
+          </pre>
         </div>
       </div>
     </section>
@@ -176,67 +304,18 @@
     <section class="mb-8">
       <h2 class="text-3xl font-semibold mb-4">Shadows</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
+        <div class="p-4 bg-white shadow rounded example-box">
           <h3 class="text-xl font-bold">Box Shadows</h3>
-          <div class="shadow bg-gray-200 p-2">shadow</div>
-          <div class="shadow-md bg-gray-300 p-2">shadow-md</div>
-          <div class="shadow-lg bg-gray-400 p-2">shadow-lg</div>
-          <div class="shadow-xl bg-gray-500 p-2">shadow-xl</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Flexbox -->
-    <section class="mb-8">
-      <h2 class="text-3xl font-semibold mb-4">Flexbox</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
-          <h3 class="text-xl font-bold">Flexbox Container</h3>
-          <div class="flex bg-gray-100 p-2">
-            <div class="flex-1 bg-blue-200 p-2">flex-1: Each item takes equal space</div>
-            <div class="flex-1 bg-blue-300 p-2">flex-1: Each item takes equal space</div>
-          </div>
-          <div class="flex flex-row bg-gray-200 p-2">
-            <div class="flex-1 bg-green-200 p-2">flex-row: Items are arranged in a row</div>
-            <div class="flex-1 bg-green-300 p-2">flex-row: Items are arranged in a row</div>
-          </div>
-          <div class="flex flex-col bg-gray-300 p-2">
-            <div class="flex-1 bg-red-200 p-2">flex-col: Items are arranged in a column</div>
-            <div class="flex-1 bg-red-300 p-2">flex-col: Items are arranged in a column</div>
-          </div>
-          <div class="flex items-center bg-gray-400 p-2">
-            <div class="bg-purple-200 p-2">items-center: Aligns items in the center vertically</div>
-          </div>
-          <div class="flex justify-center bg-gray-500 p-2">
-            <div class="bg-purple-300 p-2">justify-center: Aligns items in the center horizontally</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Grid -->
-    <section class="mb-8">
-      <h2 class="text-3xl font-semibold mb-4">Grid</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-4 bg-white shadow rounded">
-          <h3 class="text-xl font-bold">Grid Container</h3>
-          <div class="grid grid-cols-1 bg-gray-100 p-2">
-            <div class="bg-blue-200 p-2">grid-cols-1: One column</div>
-          </div>
-          <div class="grid grid-cols-2 bg-gray-200 p-2">
-            <div class="bg-green-200 p-2">grid-cols-2: Two columns</div>
-            <div class="bg-green-300 p-2">grid-cols-2: Two columns</div>
-          </div>
-          <div class="grid grid-cols-3 bg-gray-300 p-2">
-            <div class="bg-red-200 p-2">grid-cols-3: Three columns</div>
-            <div class="bg-red-300 p-2">grid-cols-3: Three columns</div>
-            <div class="bg-red-400 p-2">grid-cols-3: Three columns</div>
-          </div>
-          <div class="grid gap-4 grid-cols-3 bg-gray-400 p-2">
-            <div class="bg-yellow-200 p-2">gap-4: Adds spacing between items</div>
-            <div class="bg-yellow-300 p-2">gap-4: Adds spacing between items</div>
-            <div class="bg-yellow-400 p-2">gap-4: Adds spacing between items</div>
-          </div>
+          <div class="shadow bg-gray-200 p-2">shadow (small shadow)</div>
+          <div class="shadow-md bg-gray-300 p-2">shadow-md (medium shadow)</div>
+          <div class="shadow-lg bg-gray-400 p-2">shadow-lg (large shadow)</div>
+          <div class="shadow-xl bg-gray-500 p-2">shadow-xl (extra-large shadow)</div>
+          <pre class="code">
+&lt;div class="shadow bg-gray-200 p-2"&gt;shadow&lt;/div&gt;
+&lt;div class="shadow-md bg-gray-300 p-2"&gt;shadow-md&lt;/div&gt;
+&lt;div class="shadow-lg bg-gray-400 p-2"&gt;shadow-lg&lt;/div&gt;
+&lt;div class="shadow-xl bg-gray-500 p-2"&gt;shadow-xl&lt;/div&gt;
+          </pre>
         </div>
       </div>
     </section>
